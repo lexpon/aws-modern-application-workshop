@@ -22,6 +22,17 @@ We recommend using one of the following AWS Regions for this workshop:
 
 Select a region from the dropdown in the upper right corner of the AWS Management Console.
 
+## Changes made by me
+
+To automate the manual work which is described here, I've automated id using Terraform. So there is only one step needed
+to fulfil this module: Open a terminal, navigate to the folder `/module-1/terraform` and run the following commands:
+
+1. `terraform initiate`
+2. `terraform plan -out module-1-plan.out`
+3. `terraform apply module-1-plan.out`
+
+When the infrastructure should be deleted again, run `terraform destroy`.
+
 ## Creating your Mythical Mysifts IDE
 
 ### Create a new AWS Cloud9 Environment
