@@ -417,62 +417,62 @@ Resources:
 # names so that the other task related CF templates can use them.
 Outputs:
   CurrentRegion:
-    Description: REPLACE_ME_REGION
+    Description: REGION
     Value: !Ref AWS::Region
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'CurrentRegion' ] ]
   CurrentAccount:
-    Description: REPLACE_ME_ACCOUNT_ID
+    Description: ACCOUNT_ID
     Value: !Ref AWS::AccountId
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'CurrentAccount' ] ]
   EcsServiceRole:
-    Description: REPLACE_ME_ECS_SERVICE_ROLE_ARN
+    Description: ECS_SERVICE_ROLE_ARN
     Value: !GetAtt 'EcsServiceRole.Arn'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'EcsServiceRole' ] ]
   ECSTaskRole:
-    Description: REPLACE_ME_ECS_TASK_ROLE_ARN
+    Description: ECS_TASK_ROLE_ARN
     Value: !GetAtt 'ECSTaskRole.Arn'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'ECSTaskRole' ] ]
   VPCId:
-    Description: REPLACE_ME_VPC_ID
+    Description: VPC_ID
     Value: !Ref 'VPC'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'VPCId' ] ]
   PublicSubnetOne:
-    Description: REPLACE_ME_PUBLIC_SUBNET_ONE
+    Description: PUBLIC_SUBNET_ONE
     Value: !Ref 'PublicSubnetOne'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'PublicSubnetOne' ] ]
   PublicSubnetTwo:
-    Description: REPLACE_ME_PUBLIC_SUBNET_TWO
+    Description: PUBLIC_SUBNET_TWO
     Value: !Ref 'PublicSubnetTwo'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'PublicSubnetTwo' ] ]
   PrivateSubnetOne:
-    Description: REPLACE_ME_PRIVATE_SUBNET_ONE
+    Description: PRIVATE_SUBNET_ONE
     Value: !Ref 'PrivateSubnetOne'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'PrivateSubnetOne' ] ]
   PrivateSubnetTwo:
-    Description: REPLACE_ME_PRIVATE_SUBNET_TWO
+    Description: PRIVATE_SUBNET_TWO
     Value: !Ref 'PrivateSubnetTwo'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'PrivateSubnetTwo' ] ]
   FargateContainerSecurityGroup:
-    Description: REPLACE_ME_SECURITY_GROUP_ID
+    Description: SECURITY_GROUP_ID
     Value: !Ref 'FargateContainerSecurityGroup'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'FargateContainerSecurityGroup' ] ]
   CodeBuildRole:
-    Description: REPLACE_ME_CODEBUILD_ROLE_ARN
+    Description: CODEBUILD_ROLE_ARN
     Value: !GetAtt 'MythicalMysfitsServiceCodeBuildServiceRole.Arn'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'MythicalMysfitsServiceCodeBuildServiceRole' ] ]
   CodePipelineRole:
-    Description: REPLACE_ME_CODEPIPELINE_ROLE_ARN
+    Description: CODEPIPELINE_ROLE_ARN
     Value: !GetAtt 'MythicalMysfitsServiceCodePipelineServiceRole.Arn'
     Export:
       Name: !Join [ ':', [ !Ref 'AWS::StackName', 'MythicalMysfitsServiceCodePipelineServiceRole' ] ]
